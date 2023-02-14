@@ -83,7 +83,7 @@ public class CategoryController {
         //添加排序条件
         queryWrapper.orderByAsc(Category::getSort).orderByDesc(Category::getCreateTime);
 
-        List<Category> list = categoryService.list(queryWrapper);
-        return R.success(list);
+        List<Category> list2 = categoryService.list(queryWrapper);
+        return R.success(list2);
     }
 }
